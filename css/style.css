@@ -1,0 +1,84 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.loader {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: yellow;
+}
+
+.content {
+	width: 100vw;
+	height: 100vh;
+	background: white;
+}
+
+@keyframes pulse {
+	from { opacity: 1; }
+	to { opacity: 0.3; }
+}
+
+.koired{
+	position: absolute;
+	-webkit-animation: myOrbit 5s linear infinite;
+	-moz-animation: myOrbit 5s linear infinite;
+	-o-animation: myOrbit 5s linear infinite;
+	animation: myOrbit 5s linear infinite;
+}
+
+.koiwhite{
+	position: absolute;
+	-webkit-animation: myOrbit2 5s linear infinite;
+	-moz-animation: myOrbit2 5s linear infinite;
+	-o-animation: myOrbit2 5s linear infinite;
+	animation: myOrbit2 5s linear infinite;
+}
+
+@-webkit-keyframes myOrbit {
+	from { -webkit-transform: rotate(360deg) translateX(125px); }
+	to   { -webkit-transform: rotate(0deg) translateX(125px); }
+}
+
+@-moz-keyframes myOrbit {
+	from { -moz-transform: rotate(3600deg) translateX(125px); }
+	to   { -moz-transform: rotate(0deg) translateX(125px); }
+}
+
+@-o-keyframes myOrbit {
+	from { -o-transform: rotate(360deg) translateX(125px); }
+	to   { -o-transform: rotate(0deg) translateX(125px); }
+}
+
+@keyframes myOrbit {
+	from { transform: rotate(360deg) translateX(125px); }
+	to   { transform: rotate(0deg) translateX(125px); }
+}
+
+@-webkit-keyframes myOrbit2 {
+	from { -webkit-transform: rotate(360deg) translateX(-125px); }
+	to   { -webkit-transform: rotate(0deg) translateX(-125px); }
+}
+
+@-moz-keyframes myOrbit2 {
+	from { -moz-transform: rotate(3600deg) translateX(-125px); }
+	to   { -moz-transform: rotate(0deg) translateX(-125px); }
+}
+
+@-o-keyframes myOrbit2 {
+	from { -o-transform: rotate(360deg) translateX(-125px); }
+	to   { -o-transform: rotate(0deg) translateX(-125px); }
+}
+
+@keyframes myOrbit2 {
+	from { transform: rotate(360deg) translateX(-125px); }
+	to   { transform: rotate(0deg) translateX(-125px); }
+}
